@@ -16,7 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Vincular os parâmetros
-    // 'ssis' significa: string (nome), string (tamanho), int (quantidade), float (preço)
     $stmt->bind_param("ssis", $nome, $tamanho, $quantidade, $preco);
 
     // Executar a consulta
